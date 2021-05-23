@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+      
+      
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Image Captioning</title>
+</head>
+<body>
+
+    <section class="showcase">
+        <div class="container">
+            
+            <div class="showcase-content">
+                <h2>Image Captioning</h2>
+                
+                <div class="image-input">
+                    <label for="file" style="cursor: pointer;">Click here to upload Image</label>
+                    <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+                    <img id="output" src="img/image.png"/>
+                    <p class="caption">
+                        <span class="loading">
+                            Loading
+                            &nbsp;
+                            <i class="fas fa-spinner rotate"></i>
+                        </span>  
+                        <span class="caption-text active">
+                            Caption here
+                        </span>
+
+
+                       
+
+                    </p>
+                    
+                        
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
